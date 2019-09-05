@@ -28,15 +28,15 @@ df= df[df['longitude']!= 99999.0]
 ### create sub-dataframe and add two columns
 location=df.groupby(['latitude','longitude','location']).size().reset_index(name='count').sort_values(by='count',ascending=False)
 location=location[location['count']>10]
-location['color']=location['count'].apply(lambda count:"red" if count>=500 else
-                                         "Orange" if count>=300 and count<500 else
-                                         "Yellow" if count>=100 and count<300 else
+location['color']=location['count'].apply(lambda count:"red" if count>=300 else
+                                         "pink" if count>=100 and count<300 else
+                                         "yellow" if count>=20 and count<100 else
                                          "green"
                                          )
-location['size']=location['count'].apply(lambda count:15 if count>=500 else
-                                         10 if count>=300 and count<500 else
-                                         5 if count>=100 and count<300 else
-                                         1 
+location['size']=location['count'].apply(lambda count:20 if count>=300 else
+                                         15 if count>=100 and count<300 else
+                                         1 if count>=20 and count<100 else
+                                         0.1 
                                          )
                                          
 ### convert orginal state plain coordinates data into EPSG:4326, which folium will accept as valid location input
@@ -48,20 +48,23 @@ location['longitude'], location['latitude']= transform(inProj,outProj, x, y)
 ### create a new map with the coordinates or City of Los Angeles as center point                                
 m=folium.Map([34.052235,-118.243683], zoom_start=11)
 
-### create a MarkerCluster layer to better declutter the map
-### I can't figure out the loss of information of CircleMarker after I added the MarkerCluster layer
-mc = MarkerCluster()
+### create a CircleMarker layer
+cm_fg = folium.FeatureGroup(name='CircleMarker')
 for lat, lgn, loc, clr, count, size in zip(location['latitude'], location['longitude'], location['location'],location['color'],location['count'],location['size']):
-    folium.CircleMarker([lat, lgn],
-                        popup=loc,
-                        radius=size,
-                        color='blue',
-                        fill=True,
-                        fill_opacity=0.7,
-                        fill_color=clr,
-                       ).add_to(mc)
-mc.add_to(m)
-folium.LayerControl().add_to(m)
+    cm_fg.add_child(folium.CircleMarker([lat, lgn],
+                                        popup=loc,
+                                        radius=size,
+                                        color='blue',
+                                        fill=True,
+                                        fill_opacity=1,
+                                        fill_color=clr,
+                                       )).add_to(m)
+
+### create a MarkerCluster layer to better declutter the map
+mc_fg = folium.FeatureGroup(name='MarkerCluster')
+mc = MarkerCluster()
+for row in location.itertuples():
+    mc_fg.add_child(mc.add_child(folium.Marker(location=[row.latitude ,row.longitude]))).add_to(m)
 
 ### unfinished search part, which doesn't work properly with MarkerCluster class object
 """
@@ -70,10 +73,8 @@ cs = Search(layer=mc,
             placeholder="Search for citation zones", 
             collapsed=False, 
             ).add_to(m)    
-
-
-
 """
+
 ### get coordinates infor from google map(LA Motorcycle Parking Map)
 ds = ogr.Open('Locations.kml')
 mp = []
@@ -83,17 +84,16 @@ for lyr in ds:
         if geom != None:
             for i in range(0, geom.GetPointCount()):
                 mp.append(geom.GetPoint(i))
- 
 mp_df = pd.DataFrame(mp, columns=['longitude', 'latitude', 'value'])
-              
 mp_df = mp_df.drop(['value'], axis = 1)
 
 ### mark parking lots on the map
+mp_fg = folium.FeatureGroup(name='Parkinglot')
 for row in mp_df.itertuples():
-    m.add_child(folium.Marker(location=[row.latitude, row.longitude],
-           popup='Free Motorcycle Parking Lot'))
-    
-   
+    mp_fg.add_child(folium.Marker(location=[row.latitude, row.longitude],
+                                  popup='Free Motorcycle Parking Lot',
+                                  icon=folium.Icon(icon='leaf', color='orange'))).add_to(m)
+folium.LayerControl().add_to(m)    
 m.save('LA_parking_citations.html')
 
  
