@@ -33,7 +33,7 @@ location['color']=location['count'].apply(lambda count:"red" if count>=500 else
                                          "Yellow" if count>=100 and count<300 else
                                          "green"
                                          )
-                                         location['size']=location['count'].apply(lambda count:15 if count>=500 else
+location['size']=location['count'].apply(lambda count:15 if count>=500 else
                                          10 if count>=300 and count<500 else
                                          5 if count>=100 and count<300 else
                                          1 
@@ -96,55 +96,4 @@ for row in mp_df.itertuples():
    
 m.save('LA_parking_citations.html')
 
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-            
+ 
