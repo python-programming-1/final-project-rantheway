@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Locations</name>
+    <Style id="icon-22-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-22-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-22">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-22-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-22-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/22-blue-dot.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-22-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-22-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-22-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-503-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-991-nodesc-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/991-biz-cafe.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-991-nodesc-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/991-biz-cafe.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-991-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-991-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-991-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Griffith Observatory</name>
+      <description>Motorcycle Parking for Griffith Observatory is at the very front of the parking lot closest to the Observatory past the bathrooms on the left.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.30029,34.120175,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LAX</name>
+      <description>Free Motorcycle parking in parking structures at LAX airport. Gated and relatively safe. </description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.401182,33.9446237,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SMC</name>
+      <description>Free motorcycle parking around Pearl/20th and Pico/17th</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.469278,34.015619,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Old Town City Parking</name>
+      <description>This garage and the other city owned garages in the immediate area (NOT the private garages) all offer free parking to motorcycles (waved around gate on exit)</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.14877,34.1443319,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Paseo Colorado</name>
+      <description>Free parking in their underground garage; immediately in front of entrace in striped area. Usually there are a few bikes there. The attendants always wave me past the gate on the way out.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.144655,34.14573,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Burbank</name>
+      <description>Free public parking, spots for bikes. Almost every parking garage in this area is free.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.24429,34.105893,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wells Fargo Tower - Underground</name>
+      <description><![CDATA[Drive into the lot adjacent to the Quizno's -- ride around the gate and proceed to the lower level on the left hand side. Once you're at the lower level part inside of the white lines or between the concrete columns on the left. Use the elevator to return to street level.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.2524424,34.0532416,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Trader Joes - Silverlake</name>
+      <description>MC Parking in the back left.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.271323,34.107989,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Noho Arts</name>
+      <description><![CDATA[This garage behind AI has free motorcycle parking. It's a bit wacky 'cause you have to drive through the bicycle entrance rather than the normal car entrance. Near a sweet movie theatre and plenty of dining and nightlife!]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.374333,34.166933,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>De Lacey Parking Facility</name>
+      <description>The gate on the right side has enough space to squeeze through. It takes you down the ramp to an area that has designated motorcycle parking.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.152359,34.144993,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hermosa Beach Pier Ave</name>
+      <description><![CDATA[There are designated motorcycle parking spaces along Pier Ave. Unlike the car spaces, these don't have meters so they're free.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.402405,33.861863,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Alhambra 1st and Main st</name>
+      <description>Free parking structure, but when it is full there are spaces near pillars and walls for bikes.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.127148,34.093758,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SMC</name>
+      <description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/WsHhldgNgffW-yVdggXZceQlRgCTF7th6Il8I9BQla6MXqvXABKa5Z-xE-Cmp_RGcnLwWoJTl3mdBzNFoBNg94gaXbImDWUZnlGZbZCniXRb5iwE0VuJJmKVry8XMaz0o50YOJBvBlaBFDhhH3UA6TvRcNwumfUn7ESTqXs0y0SGPRb1RqawiCRbWWuWIqleIsaY6g1n9uOlOS7v9GAoeJIXblujAqONLEtbU9l8cP0NI1LAjpoh_exQZQMJ24lPQiuejBDs77AlJxc" height="200" width="auto" /><br><br>Free motorcycle parking around Pearl/20th and Pico/17th]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh3.googleusercontent.com/proxy/WsHhldgNgffW-yVdggXZceQlRgCTF7th6Il8I9BQla6MXqvXABKa5Z-xE-Cmp_RGcnLwWoJTl3mdBzNFoBNg94gaXbImDWUZnlGZbZCniXRb5iwE0VuJJmKVry8XMaz0o50YOJBvBlaBFDhhH3UA6TvRcNwumfUn7ESTqXs0y0SGPRb1RqawiCRbWWuWIqleIsaY6g1n9uOlOS7v9GAoeJIXblujAqONLEtbU9l8cP0NI1LAjpoh_exQZQMJ24lPQiuejBDs77AlJxc</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.472689,34.017576,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sherman Oaks Galleria</name>
+      <description><![CDATA[Free Motorcyle/Moped Parking at the Sherman Oaks Galleria. <br><br>Enter through the valet parking entrance on Sepulveda past the Ventura intersection but 30 yards before the next light. <br><br>There is enough space to ride around the gate arm. Proceed to the valet area and there is a motorcycle/moped parking zone to the right. <br><br>Use the Sepulveda exit and just ride around the gate arm.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.466735,34.154094,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Temple and Broadway</name>
+      <description><![CDATA[UPDATE: NO PARKING signs have been recently posted. I still see a few bikes park, but park at your own risk. --You can park around this building in a few spaces. Its not covered but there are always a good amount of bikes here. Its a good place if you have jury duty, or court in the Clara Shortridge building.EDIT: I haven't parked here but I've seen bikes parked by the gate on the Temple side of the building.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.243462,34.056117,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Grand Park</name>
+      <description>Outdoor motorcycle parking in grand park. Park by the bike racks.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.245542,34.0553222,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lot W next to Nokia Live</name>
+      <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/XFp7_Hft9bLHPy6pQYf6KA0i0ECE0LQ8xrLcYcIbPDdK1GZdiAj4DsuCMJs6KxnJw-AgNHA5jlcMf0-7oUd4UQF9YYsZdYdC_viYN8Dlq5lErh4rdY5XjNXavtpAjvUlc5BI2BxUEZ6AYFOce36Xp13sdh82lGL6x9DanF0MUpCV-Pzyyp5dEY1xpqWUGDDwudKMgpiER4Zx0O9ZXTVFcjjiD3ZDdTmtsDEXTjKJcFzWYYIk6vWf9fwBksEts5skP8zY6y-2zJjKUJ8" height="200" width="auto" /><br><br>See http://www.reddit.com/r/MotoLA/comments/2805h6/motorcycle_parking_at_la_livenokiastaplesla/<br><br> <br>Enter from the NORTH side of the building (Lot W) only.  Ride down one level and park in area next to the ramp that leads to the next lower level.  On exit, ride through the white pillars to the center lane which has no gates, and exit from the south side of Lot W. <br><br> 1005 Chick Hearn Ct]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh5.googleusercontent.com/proxy/XFp7_Hft9bLHPy6pQYf6KA0i0ECE0LQ8xrLcYcIbPDdK1GZdiAj4DsuCMJs6KxnJw-AgNHA5jlcMf0-7oUd4UQF9YYsZdYdC_viYN8Dlq5lErh4rdY5XjNXavtpAjvUlc5BI2BxUEZ6AYFOce36Xp13sdh82lGL6x9DanF0MUpCV-Pzyyp5dEY1xpqWUGDDwudKMgpiER4Zx0O9ZXTVFcjjiD3ZDdTmtsDEXTjKJcFzWYYIk6vWf9fwBksEts5skP8zY6y-2zJjKUJ8</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.269126,34.044721,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Feature Parking</name>
+      <description><![CDATA[Bikes park for free underground. Update: Don't park overnight.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.47933,33.99712,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>8000 Sunset</name>
+      <description>Motorcycles park for free here. There is a sign out front that says no motorcycle parking. This sign is a lie, as I was told otherwise by a parking attendant.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.364693,34.097626,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Americana Parking Structure</name>
+      <description>Enough space by the gates to get through. People park their bikes on the second level near the escalators and elevators.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.2577316,34.1450171,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Landmark Theatres</name>
+      <description>Pull around the gate arm and park in a non-car space.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.428944,34.039635,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Promenade Howard Hughes Center</name>
+      <description>After you grab a ticket make a left (instead of going up the ramp) and go straight back.  You will see a sign for motorcycle parking on your left next to the main exit where you can park with its own exit leading out behind the exit gate.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.390616,33.976768,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Running Goose Moto Parking</name>
+      <styleUrl>#icon-22-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -118.329386,34.100455,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Underground Parking Structure not "free"]]></name>
+      <description><![CDATA[They tried to charge my here. When I was on my way out the parking attendant placed a cone in the space where we could pass the gate. I was in and out fast enough that I didn't incur any fee though.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.132916,34.14297,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Walgreens Motorcycle Parking</name>
+      <description>Free parking for motorcycles. Not sure about overnights so do so at own risk.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.325511,34.096418,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Newport Parking Spot for bikes</name>
+      <styleUrl>#icon-22-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -117.928776,33.608661,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Huntington Beach Parking Structure</name>
+      <description>Free parking for motorcycles and designated parking.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.000237,33.657993,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Knotts Berry Farm</name>
+      <description>Free area for motorcycles</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -117.997448,33.843146,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>House of Hayden</name>
+      <description>Free/no time limit - in front of House of Hayden</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.187101,33.768244,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ArcLight Hollywood Parking</name>
+      <description><![CDATA[Take ticket and go to lower level, on west side of the building near the elevators. You see scooters and motorcycles parked by the plastic pylons near the exit gates. Park there and then exit to Ivar through the pylons or along the narrow area by the scooter parking. Sign says bikes must pay for parking but I've been there plenty of times and security have watched me park and never said a word. **Confirmed - go to the parking structure entrance on Ivar Ave and you will see all the scooter/motorcycle parking to your left. I was able to enter by squeezing past the parking barrier/arm and the attendants didn't bat an eyelash. Turn to the right (don't go up) and loop around left (U-turn) to get to the motorcycle scooter parking area. You can leave off a small walkway or just squeeze past one of the barriers/arm or follow a car out. No need to pay Confirmed x2: it’s pretty obvious they don’t expect motorcycles to pay, given that half of the motorcycle parking spots are actually outside of the gates. If you park in those spots, you would literally have to drive back in past the entrance gates in order to pay, which would be ridiculous. These are the moto spaces just inside the Ivar entrance..]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.328049,34.097591,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Medical Centre Garage</name>
+      <description><![CDATA[Enter from 20th Street and right before the left ticket machine, you can go to the right and park on the cross hatching. When leaving just nod/wave to the gate attendant and they'll let you out.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.48025,34.029969,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SMC Parking</name>
+      <styleUrl>#icon-22-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -118.468216,34.016017,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sunset Parking</name>
+      <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/uGNdYv_dEuEUyXY8GwRt6LG4fGIrRNJhHVeNOkI_ql09S27Muhi5AHXM0d29HpzC6paW5RuEP98Dv2-vA8gEIuqIkWKDnV8IC1J05Wa_jtw-lhkWh2D4qzn9WGj5HXtJqJRyMhXMATHyOaPdYhQdVtdmkR3VxmUHPpY1hCq2Q63bx94bndXWDolGWB-EOfhC0o58CWVeitISOEA84Y7g1Mr2MjW0UrST66fk3nubpL4bhjZPMQygEpvG" height="200" width="auto" /><br><br>Enter immediately to the right before the ticket gate, park in empty non-car spaces where bikes are parked, exit same place.  Free.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh6.googleusercontent.com/proxy/uGNdYv_dEuEUyXY8GwRt6LG4fGIrRNJhHVeNOkI_ql09S27Muhi5AHXM0d29HpzC6paW5RuEP98Dv2-vA8gEIuqIkWKDnV8IC1J05Wa_jtw-lhkWh2D4qzn9WGj5HXtJqJRyMhXMATHyOaPdYhQdVtdmkR3VxmUHPpY1hCq2Q63bx94bndXWDolGWB-EOfhC0o58CWVeitISOEA84Y7g1Mr2MjW0UrST66fk3nubpL4bhjZPMQygEpvG</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.378045,34.09306,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Grove Parking Garage</name>
+      <description><![CDATA[<img src="https://lh3.googleusercontent.com/proxy/YLYA-X5AIqntG9opI2bMrWItvf3sTANoBvizbUZM05A3TWcvqXw6PC-bT_BTooWcQDmicm4yLUDjQpHAtVHcnyUKXLMzt5tn6gy3Yzp67roCk8trnw_B_00yW8J_1r7FxHvbMXYv-WFmQrX2rptdph135ATNQ6Z_2B1FeiTVsQtioJJQLM2ljLSgB5aZIWLoM5jR2rLLZeiHxpuShgERZCLVdBq7NKtjhGq5AM8eZGRc98Zz6TFUxT-q" height="200" width="auto" /><br><br>Enter from Farmers Market Place. Pull to the right by the valet and you will see dedicated motorcycle spaces as you enter. Just go around the gate on the way out.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh3.googleusercontent.com/proxy/YLYA-X5AIqntG9opI2bMrWItvf3sTANoBvizbUZM05A3TWcvqXw6PC-bT_BTooWcQDmicm4yLUDjQpHAtVHcnyUKXLMzt5tn6gy3Yzp67roCk8trnw_B_00yW8J_1r7FxHvbMXYv-WFmQrX2rptdph135ATNQ6Z_2B1FeiTVsQtioJJQLM2ljLSgB5aZIWLoM5jR2rLLZeiHxpuShgERZCLVdBq7NKtjhGq5AM8eZGRc98Zz6TFUxT-q</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.358234,34.072951,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pierce College</name>
+      <description>Motorcycles no permits required year round.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.57372,34.183712,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Northridge Mall</name>
+      <description>Cameras cover the 2nd story parking garage, near the food court. Park near electric spots.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.554588,34.23826,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Citadel Outlets parking structure</name>
+      <description><![CDATA[free/designated motorcycle parking on the south end ground floor of the structure closest to the 5<br>note: parking is free here anyway but good luck trying to find a spot on a weekend]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.151715,34.004467,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Deus Ex Machina - Emporium Of Post Modern Activities</name>
+      <styleUrl>#icon-991-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -118.45275,33.994375,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chapman Market</name>
+      <description>Usually there is valet. They will point you to designated moto area. Free.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.297343,34.0639838,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 44</name>
+      <styleUrl>#icon-22-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -118.604674,34.183688,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4th Street Parking Garage
+</name>
+      <description>Parking garage, turn off 4th street. There is a spot on the ground level for motorcycles and scooters.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.493305,34.014579,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 47</name>
+      <description>Motorcycle spots next to upper pier lot</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.411295,33.884051,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Target parking ramp</name>
+      <description><![CDATA[<img src="https://lh6.googleusercontent.com/proxy/5XGnOFMY6yrqb1FDV4ZAYoQMFOcXr1TLkOZgV3tz494pR6AjmDD37YOTz-NquZvucHbBm_iiL9ilyCPO1kKPzW2foTIrr-tNlCfmWOmO9B7Jd7KTs5Hh5Xwugb2uQbosG3QAWu5JPL3StE6PFk9KiVAtyLzrVdzvpENc8LHEcCTrgFNHwSY0D3le7cOyN6-ubNJoDThcTHG-VXUL5l4el8B9XbT2JbkWPQzLfA151DwdO7LV5UKnSh1utm7L" height="200" width="auto" /><br><br>[UPDATE - New "No bike" gates are being installed here. 8th Street Entrance already essentially blocked, new manager wants us to pay with ticket. Spoke to assistant manager 9/28/2018 ]<br><br>Motorcycle parking on level 7, nearest 7th St entrance, by car charging spots. <br><br>From 7th, ride past gates and turn left, then left again. From 8th, go up until you find level 7. <br><br>To exit, simply ride past the gates (use center lane to exit to 8th St.).]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh6.googleusercontent.com/proxy/5XGnOFMY6yrqb1FDV4ZAYoQMFOcXr1TLkOZgV3tz494pR6AjmDD37YOTz-NquZvucHbBm_iiL9ilyCPO1kKPzW2foTIrr-tNlCfmWOmO9B7Jd7KTs5Hh5Xwugb2uQbosG3QAWu5JPL3StE6PFk9KiVAtyLzrVdzvpENc8LHEcCTrgFNHwSY0D3le7cOyN6-ubNJoDThcTHG-VXUL5l4el8B9XbT2JbkWPQzLfA151DwdO7LV5UKnSh1utm7L</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.262458,34.049562,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wholefoods</name>
+      <description>Just park in non-car parking area around striped white lines by shopping carts.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.36075,34.070231,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Verve / Sweetgreen</name>
+      <description>Park in non car space or double lined area.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.365012,34.072231,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bay Club Moto Parking</name>
+      <styleUrl>#icon-22-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -118.383479,33.9041,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Point 49</name>
+      <styleUrl>#icon-22-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          -118.350821,34.074346,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Fashion Square</name>
+      <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/RblkPGWZY2eBMEfaaQWGpP5SFOiqaPS2Qa2gQpCV4dJCgBGvQY71EuxvY8xaNXuSZsWW97G6hywcYf1nePEAbalGU8SFTBUkVHWJPu-lnV4iMeFh0aEKyFiV81kB_7LROTDBmhoklJbcrV3LDjOXD-OsXsWjAKOK45OgmW9y9T2B1Sip3wUvwOXQA7GSO_eybMhESMx9dOun2WYa5R4YQn0gVBgW6OlJ68wUpPmg_hn7-ZNzZYSe3PTBol0" height="200" width="auto" /><br><br>Free parking. Designated Moto space next to the dining pavilion entrance.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh4.googleusercontent.com/proxy/RblkPGWZY2eBMEfaaQWGpP5SFOiqaPS2Qa2gQpCV4dJCgBGvQY71EuxvY8xaNXuSZsWW97G6hywcYf1nePEAbalGU8SFTBUkVHWJPu-lnV4iMeFh0aEKyFiV81kB_7LROTDBmhoklJbcrV3LDjOXD-OsXsWjAKOK45OgmW9y9T2B1Sip3wUvwOXQA7GSO_eybMhESMx9dOun2WYa5R4YQn0gVBgW6OlJ68wUpPmg_hn7-ZNzZYSe3PTBol0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.43745,34.156403,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sherman Oaks Galleria</name>
+      <description><![CDATA[<img src="https://lh5.googleusercontent.com/proxy/-EnwYxRs-ZfTovfiftVdIXovaAsxfJPm-gaOEQOpTO_CUy-yHUP_7eQdCMlFgac84qMxjOQ-SnCm2WIns1iAKIr2B-_xRGnhQT1ZVr8kMq8kzbZW4TlfZ3eTPrRCvGNAJvZUfW2U4qF0Kt-Wg_cPWA4Fo4Y8xDH_e9o6T9HK8LyvSkKuQf8U0fmyoKI9FwFup_AhvD6UTIh-T3nHQj2rZKZV5ZuqQUwKJx1ZkrH4_e_HV6DmBlBXAOCU" height="200" width="auto" /><br><br>Enter through self park and go around the gate to the right to the lower level (yellow color). Continue straight down the first row, and moto space is next to the wall on the left. Exit to Sepulveda.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh5.googleusercontent.com/proxy/-EnwYxRs-ZfTovfiftVdIXovaAsxfJPm-gaOEQOpTO_CUy-yHUP_7eQdCMlFgac84qMxjOQ-SnCm2WIns1iAKIr2B-_xRGnhQT1ZVr8kMq8kzbZW4TlfZ3eTPrRCvGNAJvZUfW2U4qF0Kt-Wg_cPWA4Fo4Y8xDH_e9o6T9HK8LyvSkKuQf8U0fmyoKI9FwFup_AhvD6UTIh-T3nHQj2rZKZV5ZuqQUwKJx1ZkrH4_e_HV6DmBlBXAOCU</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.467035,34.156092,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Santa Monica - Parking Structure 6</name>
+      <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/NdH88Z4-a9jkS_HKSS9I4ynYrWlPD6BgyTV5tHTqzIrJANfIMU3QkWswfv9W76K8R3gKr4MAUHJXt9cmH6qYLXR3kRC9AQwCPPu1MfTpSwN5qNjgHBt673y7_hrcxgM86R_qNjadqwCTcYn0POvT7jnOrcuBMYLLIuiWfIs2KMDcYRJ4LweKgkAR8aF4h18lOfDwJPpG3LTjvAUvgng0_dk01Qj5SqfAB411erUFtLeZRwkq-IT4LecyhRU" height="200" width="auto" /><br><br>Enter on 2nd street, follow ramp up. Free motorcycle parking is to the right before the gate.]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh4.googleusercontent.com/proxy/NdH88Z4-a9jkS_HKSS9I4ynYrWlPD6BgyTV5tHTqzIrJANfIMU3QkWswfv9W76K8R3gKr4MAUHJXt9cmH6qYLXR3kRC9AQwCPPu1MfTpSwN5qNjgHBt673y7_hrcxgM86R_qNjadqwCTcYn0POvT7jnOrcuBMYLLIuiWfIs2KMDcYRJ4LweKgkAR8aF4h18lOfDwJPpG3LTjvAUvgng0_dk01Qj5SqfAB411erUFtLeZRwkq-IT4LecyhRU</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.496191,34.0143036,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Whole Foods Mar Vista</name>
+      <description>Pull into the diagonal painted lines at the N entrance / exit.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.437883,34.022177,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>IKEA Burbank Home Furnishings</name>
+      <description><![CDATA[<img src="https://lh4.googleusercontent.com/proxy/QbQT8NpFkHew2yts2cwmctkP87toAjvzucxeXJl30M9GiBSpvwo5_4zQkqWZg7A8E7wUiggsU4xO-BSeOMGQnxWLGGH3h6ML4KOw6dW7ULYpBVSwub9yxc8rqg3BVGuFZTrXhd40RcIyUr6U7SfiXQoYFtr_k5P_wu_mFBv_4CtuiacXWFIS57nI7Dy8lnqkVcA7dZjglmf33DYoA6v8n_E_yd3O1qpBNST1ilC3UyB9myzJ7ti7b2zk9Cvj" height="200" width="auto" /><br><br>Motorcycles park next to bike rack by entrance]]></description>
+      <styleUrl>#icon-22</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh4.googleusercontent.com/proxy/QbQT8NpFkHew2yts2cwmctkP87toAjvzucxeXJl30M9GiBSpvwo5_4zQkqWZg7A8E7wUiggsU4xO-BSeOMGQnxWLGGH3h6ML4KOw6dW7ULYpBVSwub9yxc8rqg3BVGuFZTrXhd40RcIyUr6U7SfiXQoYFtr_k5P_wu_mFBv_4CtuiacXWFIS57nI7Dy8lnqkVcA7dZjglmf33DYoA6v8n_E_yd3O1qpBNST1ilC3UyB9myzJ7ti7b2zk9Cvj</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -118.303163,34.174565,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cedars-Sinai Medical Center</name>
+      <description>In P8 structure outside gates off Alden</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.380417,34.075307,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of California, Los Angeles</name>
+      <description>Most lots have free M/C area.  Check their website for detailed instructions. Map of motorcycle Parking Areas is available here: https://ucla.app.box.com/s/0nnow9bn69494gcsz4rbphap2txyckl9</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.445181,34.068921,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Coffee Bean & Tea Leaf]]></name>
+      <description>Parking structure here has two areas on the ground level clearly reserved for motorcycles. Go around the arms to get in and out.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.3970102,33.9300885,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Grand Central Market Parking Garage</name>
+      <description>There is bike parking right after the automated machines</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.2489246,34.0513549,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[Macy's Structure]]></name>
+      <description>Ride all the way to the parking on the 4th floor; take a ticket to enter. The exit gates have massive gaps and you can park for free for as much time as you want.</description>
+      <styleUrl>#icon-22</styleUrl>
+      <Point>
+        <coordinates>
+          -118.2590141,34.0472914,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LA Fitness Westwood
+</name>
+      <description>Free motorcycle parking for LA Fitness members. Go around gate and park to the left of the valet station.</description>
+      <styleUrl>#icon-503-DB4436</styleUrl>
+      <Point>
+        <coordinates>
+          -118.4453453,34.0588473,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Getty</name>
+      <description>I asked a woman in the parking office for their policy on motorcycles, and she told me the official policy is motorcycles must pay for parking. However, she then continued, unprompted, to tell me that no one would stop a motorcycle from going around the barrier to enter and leave without paying. Motorcycle spaces are to the right just past the entrance gates.</description>
+      <styleUrl>#icon-503-DB4436</styleUrl>
+      <Point>
+        <coordinates>
+          -118.4740954,34.0780358,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
